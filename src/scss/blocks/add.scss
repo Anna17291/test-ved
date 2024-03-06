@@ -1,0 +1,48 @@
+.add {
+  color: #ffffff;
+  padding: 7px 0;
+}
+
+.add__social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0 0;
+}
+
+.add__link {
+  padding-top: 5px;
+  padding-right: 3px;
+  cursor: pointer;
+}
+
+.add__link:hover .add__image {
+  opacity: 0.5;
+  transition: 0.5s ease;
+}
+
+.add__link:not(:hover) .add__image {
+  transition: 0.5s ease;
+}
+
+.add__link:focus .add__image {
+  opacity: 0.5;
+  transition: 0.5s ease;
+}
+
+.add__link:not(:focus) .add__image {
+  transition: 0.5s ease;
+}
+
+.add__message {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.add__copyright {
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+  padding-left: 3px;
+}

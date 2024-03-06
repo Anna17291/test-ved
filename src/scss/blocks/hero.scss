@@ -1,0 +1,51 @@
+.hero {
+  background-color: #ffffff;
+  padding: 23px 0;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  @include vp-1023 {
+    flex-direction: column;
+  }
+}
+
+.hero__image {
+  width: 49%;
+  aspect-ratio: 1/0.8;
+  height: auto;
+
+  @include vp-1023 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.hero__description {
+  width: 47%;
+  font-size: 15px;
+  line-height: 24px;
+  padding-bottom: 2px;
+  margin: 0;
+
+  @include vp-1023 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.hero__header {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 38px 0;
+
+  @include vp-1023 {
+    align-self: center;
+  }
+}

@@ -1,0 +1,94 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  padding-top: 2px;
+}
+
+.navigation__list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: flex-start;
+  width: 45%;
+  padding: 3px 0 0;
+  flex-wrap: wrap;
+
+  @include vp-1439 {
+    width: 55%;
+  }
+
+  @include vp-1023 {
+    width: 60%;
+  }
+}
+
+.navigation__container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.navigation__link {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 400;
+  font-size: 18px;
+
+  &:hover,
+  &:focus {
+    transition: 0.5s ease;
+    opacity: 0.5;
+  }
+
+  &:not(:hover),
+  &:not(:focus) {
+    transition: 0.5s ease;
+  }
+}
+
+.navigation__cart {
+  margin-left: auto;
+  width: 170px;
+  text-align: end;
+  text-decoration: none;
+  position: relative;
+  font-family: inherit;
+}
+
+.navigation__cart .navigation__link {
+  font-size: 16px;
+}
+
+.navigation__cart::before {
+  position: absolute;
+  content: "";
+  background: url("../img/cart.svg") no-repeat;
+  left: 50px;
+  top: -3px;
+  width: 45px;
+  height: 36px;
+
+  @include vp-767 {
+    left: 30px;
+  }
+}
+
+.navigation__nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.navigation__item:not(:last-child) {
+  margin-right: 42px;
+
+  @include vp-1439 {
+    margin-right: 25px;
+  }
+
+  @include vp-1023 {
+    margin-right: 20px;
+  }
+}
