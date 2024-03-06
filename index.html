@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ресторан</title>
+  <link rel="preload" href="fonts/Roboto-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Roboto-Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Roboto-Black.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="scss/styles.css" />
+  <link rel="stylesheet" href="scss/styles.scss" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="main-header">
+      <div class="main-header__container">
+        <section class="main-header__contacts contacts">
+          <div class="contacts__container container">
+            <a class="contacts__link" href="#">
+              <img class="contacts__logo" src="img/logo-header.svg" width="130" height="36" alt="Логотип компании">
+            </a>
+            <ul class="contacts__list">
+              <li class="contacts__item contacts__item--city">Тамбов</li>
+              <li class="contacts__item contacts__item--phone">
+                <a class="contacts__phone" href="tel:89156600909">+7 (915) 660 09-09</a>
+              </li>
+              <li class="contacts__item contacts__item--time">09:00-21:00</li>
+            </ul>
+          </div>
+        </section>
+        <section class="main-header__navigation navigation">
+          <div class="navigation__container container">
+            <nav class="navigation__nav">
+              <ul class="navigation__list">
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">
+                    Меню ресторана
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link">
+                    Бизнес-ланч
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">
+                    Детокс
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a class="navigation__link" href="#">
+                    Рационы
+                  </a>
+                </li>
+              </ul>
+              <div class="navigation__cart">
+                <a class="navigation__link" href="#">Корзина</a>
+              </div>
+            </nav>
+          </div>
+        </section>
+      </div>
+    </header>
+    <main class="page-main">
+      <h1 class=" visually-hidden">Ресторан.</h1>
+      <div class="page-main__wrapper">
+        <section class="page-main__promo promo">
+          <div class="swiper promo__container">
+            <ul class="promo__list promo-list swiper-wrapper">
+              <li class="swiper-slide">
+                <h2 class="promo__header">
+                  <span class="promo__special promo__special--header">Детокс-<br></span>программа
+                </h2>
+                <p class="promo__description">комплексного очищения организма<br>от<span
+                    class="promo__special promo__special--description"> 1099 </span>руб</p>
+                <a class="promo__button button-main" href="#delivery">Заказать</a>
+              </li>
+              <li class="swiper-slide">
+                <h2 class="promo__header">
+                  <span class="promo__special promo__special--header">Детокс-<br></span>программа
+                </h2>
+                <p class="promo__description">комплексного очищения организма<br>от<span
+                    class="promo__special promo__special--description"> 1099 </span>руб</p>
+                <a class="promo__button button-main">Заказать</a>
+              </li>
+              <li class="swiper-slide">
+                <h2 class="promo__header">
+                  <span class="promo__special promo__special--header">Детокс-<br></span>программа
+                </h2>
+                <p class="promo__description">комплексного очищения организма<br>от<span
+                    class="promo__special promo__special--description"> 1099 </span>руб</p>
+                <a class="promo__button button-main">Заказать</a>
+              </li>
+              <li class="swiper-slide">
+                <h2 class="promo__header">
+                  <span class="promo__special promo__special--header">Детокс-<br></span>программа
+                </h2>
+                <p class="promo__description">комплексного очищения организма<br>от<span
+                    class="promo__special promo__special--description"> 1099 </span>руб</p>
+                <a class="promo__button button-main">Заказать</a>
+              </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev promo__slider-button promo__slider-button--prev"></div>
+            <div class="swiper-button-next promo__slider-button promo__slider-button--next"></div>
+          </div>
+        </section>
+        <section class="page-main__advantages advantages">
+          <div class="advantages__container container">
+            <h2 class="visually-hidden">
+              Преимущества расчудесного ресторана
+            </h2>
+            <ul class="advantages__list">
+              <li class="advantages__item">
+                <img class="advantages__image advantages__image--products" src="img/advantage-1.svg"
+                  alt="Изображение продуктов.">
+                <p class="advantages__description">Используем только<br>натуральные продукты,<br>блюда без консервантов
+                  и искусственных добавок.</p>
+              </li>
+              <li class="advantages__item">
+                <img class="advantages__image advantages__image--menu" src="img/advantage-2.svg"
+                  alt="Изображение меню.">
+                <p class="advantages__description">Сбалансированное<br>здоровое меню,<br>соответствующее КБЖУ</p>
+              </li>
+              <li class="advantages__item">
+                <img class="advantages__image advantages__image--coach" src="img/advantage-3.svg"
+                  alt="Изображение списка тернировок.">
+                <p class="advantages__description">По желанию подберем программу тренировок и составим индивидуальное
+                  КБЖУ для любого уровня подготовки.
+                </p>
+              </li>
+              <li class="advantages__item">
+                <img class="advantages__image advantages__image--delivery" src="img/advantage-4.svg"
+                  alt="Изображение пакета доставки.">
+                <p class="advantages__description">Бесплатная доставка, чтобы сэкономить массу времени и<br>сил для
+                  более важных и<br>приятных дел.</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="page-main__menu menu">
+          <div class="menu__container container">
+            <h2 class="menu__header">Рационы</h2>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <img class="menu__image" src="img/product-1.jpg" width="280" height="280"
+                  alt="Иллюстрация рациона Баланс">
+                <h3 class="menu__item-header">Баланс</h3>
+                <p class="menu__description">Здоровое питание на каждый день<br>для тех, кто заботится о своем
+                  ежедневном
+                  рационе.</p>
+                <p class="menu__calories">~1 800 ккал</p>
+                <div class="menu__order-wrapper">
+                  <h4 class="menu__price">1 190 ₽</h4>
+                  <button class="menu__button button-main">Выбрать</button>
+                </div>
+              </li>
+              <li class="menu__item">
+                <img class="menu__image" src="img/product-2.jpg" width="280" height="280"
+                  alt="Иллюстрация рациона Баланс">
+                <h3 class="menu__item-header">ЛАЙТ</h3>
+                <p class="menu__description">Четырехразовое меню для похудения, поддержания формы и создания рельефа.
+                </p>
+                <p class="menu__calories">~1 400 ккал</p>
+                <div class="menu__order-wrapper">
+                  <h4 class="menu__price">1 050 ₽</h4>
+                  <button class="menu__button button-main">Выбрать</button>
+                </div>
+              </li>
+              <li class="menu__item">
+                <img class="menu__image" src="img/product-3.jpg" width="280" height="280"
+                  alt="Иллюстрация рациона Баланс">
+                <h3 class="menu__item-header">Супер лайт</h3>
+                <p class="menu__description">Быстрое похудение и поддержание формы. Трехразовое меню для быстрого
+                  снижения веса без спорта.</p>
+                <p class="menu__calories">~900 ккал</p>
+                <div class="menu__order-wrapper">
+                  <h4 class="menu__price">890 ₽</h4>
+                  <button class="menu__button button-main">Выбрать</button>
+                </div>
+              </li>
+              <li class="menu__item">
+                <img class="menu__image" src="img/product-4.jpg" width="280" height="280"
+                  alt="Иллюстрация рациона Баланс">
+                <h3 class="menu__item-header">Масс</h3>
+                <p class="menu__description">Сбалансированное питание для поддержания оптимальной формы при тренировках.
+                </p>
+                <p class="menu__calories">~1 800 ккал</p>
+                <div class="menu__order-wrapper">
+                  <h4 class="menu__price">1 490 ₽</h4>
+                  <button class="menu__button button-main">Выбрать</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="page-main__hero hero">
+          <div class="hero__container container">
+            <img class="hero__image" src="img/hero.jpg" width="579" height="466" alt="Изображение повара.">
+            <div class="hero__description">
+              <h2 class="hero__header">О нас</h2>
+              <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi, neque, et leo nulla
+                nisl. Neque parturient elementum habitasse etiam nec. Fermentum justo nam nibh vitae pellentesque
+                integer. Imperdiet habitant tortor est amet tortor viverra. Nulla eget commodo, adipiscing arcu in et
+                risus in.
+              </p>
+              <p class="hero__text">Cras eu molestie consectetur amet at euismod. Nunc elementum lorem pharetra cursus
+                risus eu. Ac feugiat arcu etiam eget sem urna tincidunt lacus. Nec morbi ultrices nulla accumsan
+                adipiscing. Elementum sagittis eu placerat non molestie luctus gravida. Risus laoreet nunc lectus orci.
+                Vitae at augue sagittis. Sed faucibus ultrices elementum faucibus varius leo, vitae. Molestie semper
+                habitant varius eleifend nisi faucibus.</p>
+            </div>
+          </div>
+        </section>
+        <section class="page-main__delivery delivery" id="delivery">
+          <div class="delivery__container container">
+            <div class="delivery__text">
+              <h2 class="delivery__header">Условия доставки</h2>
+              <p class="delivery__conditions">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi, neque, et
+                leo nulla nisl. Neque parturient elementum habitasse etiam nec.
+              </p>
+              <p class="delivery__conditions">Fermentum justo nam nibh vitae pellentesque integer. Imperdiet habitant
+                tortor est amet tortor viverra.</p>
+              <button class="delivery__button button-main">Связаться с нами</button>
+            </div>
+            <div class="delivery__map">
+              <div class="overlay" onClick="style.pointerEvents='none'"></div>
+              <iframe class="delivery__iframe"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728594!2d30.320472477109544!3d59.93871647491513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1682007793042!5m2!1sru!2sru"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+              <div class="delivery__image"></div>
+              <span class="visually-hidden">Мы на карте.</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__container container">
+        <section class="main-footer__nav footer-nav">
+          <a class="footer-nav__logo-link" href="#">
+            <img class="footer-nav__logo" src="img/logo-footer.svg" width="130" height="36" alt="Логотип ресторана">
+          </a>
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">Контакты</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">Оплата</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">Публичная оферта</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">О компании</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">Доставка</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link">Политика конфиденциальности</a>
+            </li>
+          </ul>
+        </section>
+        <section class="main-footer__add add">
+          <div class="add__social">
+            <p class="add__copyright">©2022</p>
+            <a class="add__link" href="#">
+              <img class="add__image add__image--inst" src="img/insta.svg">
+            </a>
+          </div>
+          <p class="add__message">
+            Мы используем cookies для быстрой и удобной работы сайта. Продолжая пользоваться сайтом, вы принимаете
+            условия
+            обработки персональных данных
+          </p>
+        </section>
+      </div>
+    </footer>
+
+    <div class="modal-container modal-container--closed">
+      <div class="modal-page" id="modal-page">
+        <section class="modal-page__content modal-page-content">
+          <form class="modal-page__form" action="https://echo.htmlacademy.ru" method="post">
+            <fieldset class="modal-page__fieldset">
+              <legend class="visually-hidden">
+                Форма обратной связи
+              </legend>
+              <h2 class="modal-page__header">Форма обратной связи</h2>
+              <label class="modal-page__label" for="#name">Ваше Имя<span class="modal-page__label-star">
+                  *</span></label>
+              <input class="modal-page__input modal-page__input--name" id="name" type="text" autofocus required
+                name="mame" tabindex="1">
+              <label class="modal-page__label" for="#phone">Телефон<span class="modal-page__label-star">
+                  *</span></label>
+              <input class="modal-page__input modal-page__input--phone mask-phone form-control" id="phone" type="text"
+                required name="phone" minlength="10" tabindex="1">
+            </fieldset>
+          </form>
+          <button class="modal-page__send-button button-main" tabindex="1">Отправить</button>
+          <p class="modal-page__note">Нажимая на кнопку, вы соглашаетесь на обработку <br><span
+              class="modal-page__special">персональных данных</span>
+          </p>
+        </section>
+        <button class="modal-page__close-button noselect" tabindex="6"></button>
+      </div>
+    </div>
+
+    <div class="modal-container-success modal-container-success--closed">
+      <div class="modal-page-success" id="modal-page">
+        <section class="modal-page-success__content modal-page-content">
+          <h2 class="modal-page__header modal-page__header--success">Форма обратной связи</h2>
+          <p class="modal-page-success__message">Ваша заявка успешно отправлена.</p>
+          <button class="modal-page__success-button button-main" tabindex="1">Закрыть</button>
+        </section>
+        <button class="modal-page__success-close-button noselect" tabindex="6"></button>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+      type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </div>
+</body>
