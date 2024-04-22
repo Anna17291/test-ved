@@ -946,8 +946,10 @@ body {
   }
 }
 
-.footer-nav__item {
-  text-align: center;
+@media (max-width: 767px) {
+  .footer-nav__item {
+    text-align: center;
+  }
 }
 
 .footer-nav__link {
